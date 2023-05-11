@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "Bypass Proofpoint",
+    "description": "Bypass URL Defense for github.com links",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

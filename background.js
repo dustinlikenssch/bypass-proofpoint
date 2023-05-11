@@ -1,7 +1,7 @@
 // domains to bypass proofpoint url defense
 const hostnames = ["github.com"]
 
-chrome.tabs.onUpdated.addListener( function(activeInfo){
+chrome.tabs.onUpdated.addListener(() => {
   const queryOptions = { active: true, lastFocusedWindow: true }
   chrome.tabs.query(queryOptions, ([tab]) => {
     const url = new URL(tab.url)
